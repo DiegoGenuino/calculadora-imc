@@ -33,7 +33,7 @@ main {
 
 .container {
     width: 40rem;
-    height: 50rem;
+    height: 40rem;
     background-color: #00ff4c;
     border-radius: 3rem;
     display: flex;
@@ -48,6 +48,8 @@ main {
     content: "";
     border-right: .2rem solid;
     animation: pulse 1s ease infinite;
+    margin-left: .3rem;
+    border-radius: 10px;
 }
 
 .div-peso {
@@ -107,28 +109,26 @@ span {
     opacity: 50%;
 }
 
-@media (min-height: 768px) {
+@media (max-width: 768px) {
     .container {
-        max-height: 40rem;
+        max-width: 30rem;
     }
 }
 
 @keyframes pulse {
     0% {
-        .container h2: after content: "";
-        border-right: .2rem solid;
         opacity: 0;
     }
 
     50% {
-        .container h2: after content: "";
-        border-right: .2rem solid;
         opacity: 50%;
     }
 
     100% {
-        .container h2: after content: "";
-        border-right: .2rem solid;
         opacity: 0;
     }
+}
+
+@keyframes drug {
+    0% 
 }
