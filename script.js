@@ -10,7 +10,8 @@ function calcularImc() {
 
   const resultadoImc = input_peso / (input_altura ** 2);
 
+
   div_resultado.innerHTML = `
    <h3>Seu IMC é: ${resultadoImc.toFixed(2)}</h3>
-     `
+   `
 }
