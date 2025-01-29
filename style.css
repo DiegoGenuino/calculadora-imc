@@ -11,14 +11,14 @@
 header {
     width: 100%;
     height: 10vh;
-    background-color: #00ff4c;
+    background-color: #111827;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header h1 {
-    color: #000000;
+    color: #F9FAFB;
     font-weight: 600;
 }
 
@@ -34,14 +34,19 @@ main {
 .container {
     width: 40rem;
     height: 40rem;
-    background-color: #00ff4c;
+    background-color: #111827;
     border-radius: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    box-shadow: 0 10px 40px #0000005e;
+    box-shadow: 0 10px 40px #000000c5;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #F9FAFB;
 }
 
 .container h2:after {
@@ -84,7 +89,7 @@ main {
 
 .div-peso input:hover,
 .div-altura input:hover {
-    border: solid .1rem #000000;
+    border: solid .1rem #0066ff;
 }
 
 .container button {
@@ -92,14 +97,28 @@ main {
     height: 3rem;
     border-radius: .8rem;
     border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .container button:hover {
-    border: solid .1rem #000000;
+    border: solid .1rem #D1D5DB;
+}
+
+#div-resultado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#div-resultado h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #F9FAFB;
 }
 
 label {
-    color: #000000;
+    color: #F9FAFB;
     margin-left: .6rem;
     margin-bottom: .6rem;
     font-weight: 600;
@@ -111,7 +130,11 @@ span {
 
 @media (max-width: 768px) {
     .container {
-        max-width: 30rem;
+        max-width: 25rem;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
     }
 }
 
